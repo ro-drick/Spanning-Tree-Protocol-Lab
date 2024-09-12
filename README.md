@@ -2,7 +2,7 @@
 
 ## Lab Overview
 In this lab, we will explore the Spanning Tree Protocol (STP) configuration and optimization by modifying the root bridge selection, adjusting interface costs and port priorities, and enhancing network reliability using PortFast and BPDU Guard features. The topology consists of four switches connected in a loop with two VLANs, and the tasks involve manipulating the STP roles and paths.
-
+<img src= "https://github.com/ro-drick/Spanning-Tree-Protocol-Lab/blob/main/configuring-stp.PNG">
 ## Tasks Overview
 
 ### Task 1: Check Current STP Topology
@@ -88,6 +88,12 @@ SW4# show spanning-tree interface fastEthernet 0/3 detail
 ### Verification and Testing
 - Use `show spanning-tree` commands to verify changes in the root bridge, root ports, and designated ports.
 - Test BPDU Guard by sending a BPDU to an edge port and confirming it shuts down the port.
+
+## Conclusion
+This lab provided practical experience with Spanning Tree Protocol (STP) configuration, including modifying root bridge elections, adjusting port costs and priorities, and implementing PortFast and BPDU Guard. By strategically setting root and secondary bridges for different VLANs, we ensured optimal path selection and redundancy. Adjusting interface costs and priorities helped us understand how STP recalculates the network topology. Finally, enabling PortFast and BPDU Guard on access ports improved network stability by preventing unnecessary topology changes. Mastering these configurations is key to maintaining an efficient and loop-free network.
+
+
+
 ## Acknowledgements
 
 
